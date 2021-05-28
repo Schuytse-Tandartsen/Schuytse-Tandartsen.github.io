@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    <header>
+    <header class="flex space-around border__header--bottom">
+      <a href="/">
+        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
+      </a>
       <nav class=navbar">
   <ul>
     
@@ -337,7 +340,7 @@
     <input type="tel" id="telefoon" name="Telefoon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Vul uw telefoonnummer in." />
     <label for="opmerking">Opmerking</label>
     <textarea id="opmerking" name="Opmerking" placeholder="Schrijf uw opmerking."></textarea>
-    <button type="submit" form="contact" value="Verstuur">Verstuur</button>
+    <button class="background-primary" type="submit" form="contact" value="Verstuur">Verstuur</button>
   </fieldset>
   <!-- These fields are used by mailthis.to -->
 </form>

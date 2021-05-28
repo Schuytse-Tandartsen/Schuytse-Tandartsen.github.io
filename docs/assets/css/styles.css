@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
 .white { color: #FFFFFF; }
 
 .black { color: #111111; }
 
-.primary { color: #AEE239; }
+.primary { color: #8FBE00; }
 
-.secondary { color: #40C0CB; }
+.secondary { color: #00A8C6; }
 
 .tertiary { color: #EBEBEB; }
 
@@ -12,9 +13,9 @@
 
 .background-black { background-color: #111111; }
 
-.background-primary { background-color: #AEE239; }
+.background-primary { background-color: #8FBE00; }
 
-.background-secondary { background-color: #40C0CB; }
+.background-secondary { background-color: #00A8C6; }
 
 .background-tertiary { background-color: #EBEBEB; }
 
@@ -24,13 +25,21 @@
 
 .border__button { border: 2px solid #111111; }
 
-h1 { font-size: 6rem; }
+h1 { font-size: 3.5rem; font-weight: 600; letter-spacing: -1px; line-height: 1.1; margin: 6rem 6rem 3rem; color: #EBEBEB; }
 
-h2 { font-size: 3.5rem; font-weight: 300; letter-spacing: -1px; line-height: 1.2; padding: 6rem 6rem 3rem; }
+@media screen and (min-width: 48em) { h1 { font-size: 5rem; } }
 
-h3 { font-size: 2rem; }
+h2 { font-size: 2rem; font-weight: 600; }
 
-h4, h5, p { line-height: 1.6; }
+h3 { font-size: 1.5rem; font-weight: 600; }
+
+h4, h5 { line-height: 1.6; }
+
+p { font-weight: 400; line-height: 1.6; }
+
+button { font-size: 1.5rem; font-weight: 700; }
+
+figcaption { font-size: 1.2rem; font-weight: 600; }
 
 form { width: 50%; }
 
@@ -50,33 +59,37 @@ form p input { margin: 0; width: 1.5rem; }
 
 form p label { padding-left: .5em; }
 
-button { width: 14rem; height: 3rem; font-family: Amatic, Helvetica, sans-serif; font-size: 1rem; font-weight: 600; text-transform: uppercase; padding: 0.5em; text-align: center; border: none; border-radius: 1.5rem; text-decoration: none; cursor: pointer; }
+button { width: 14rem; font-family: "Amatic SC", "Open Sans", Verdana, Helvetica, sans-serif; text-transform: uppercase; padding: 0.5em; text-align: center; border: none; border-radius: 1.5rem; text-decoration: none; cursor: pointer; }
 
 button:hover { transition: background-color .2s linear; }
 
-a.button__covid { position: fixed; display: block; z-index: 9999; top: 80vh; left: -3rem; transform: rotate(90deg); padding: 1rem 2rem; text-decoration: none; background-color: #AEE239; color: #FFFFFF; }
+a.button__covid { display: block; position: fixed; top: 80vh; left: -3rem; z-index: 9999; padding: 1rem 2rem; transform: rotate(90deg); text-decoration: none; color: #FFFFFF; background-color: #111111; border-radius: 1.5rem 1.5rem 0 0; box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1); }
 
-a.button__covid:hover { background-color: #95ca1e; }
+a.button__covid:hover { background-color: #2b2b2b; }
 
-.contact_overlay { display: block; position: absolute; top: 20vh; right: 0; z-index: 9999; }
+.contact_overlay { display: block; position: fixed; top: 20vh; right: 0; z-index: 9999; }
 
-.contact_overlay__buttons { font-size: 2rem; background-color: #AEE239; position: relative; transition: left 0.2s ease-out; left: calc(100% - 5rem); }
+.contact_overlay__buttons { position: relative; font-size: 1.5rem; background-color: #111111; color: #FFFFFF; border-radius: 1.6rem 0 0 1.6rem; box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1); transition: left 0.2s ease-out; left: calc(100% - 3rem); }
 
 .contact_overlay__buttons:hover { left: 0; }
 
-.contact_overlay__buttons a { padding: 1rem; text-decoration: none; display: block; color: #FFFFFF; display: flex; align-items: center; }
+.contact_overlay__buttons a { display: flex; align-items: center; padding: .5rem; text-decoration: none; color: #FFFFFF; background-color: #111111; border-radius: 1.5rem 0 0 1.5rem; }
 
-.contact_overlay__buttons a:hover { background-color: #95ca1e; }
+.contact_overlay__buttons a:hover { background-color: #2b2b2b; border-radius: 0; }
 
-.contact_overlay__buttons a i { text-align: center; display: inline-block; width: 3rem; padding-right: 1rem; }
+.contact_overlay__buttons a:hover:first-child { border-radius: 1.5rem 0 0 0; }
 
-.contact_overlay__buttons a span { font-size: 1.2rem; }
+.contact_overlay__buttons a:hover:last-child { border-radius: 0 0 0 1.5rem; }
+
+.contact_overlay__buttons a i { display: inline-block; text-align: center; width: 2.5rem; }
+
+.contact_overlay__buttons a span { font-size: 1rem; }
 
 .grid { display: grid; grid-template-columns: 1fr; }
 
 .grid .col { padding: 2rem; }
 
-@media screen and (min-width: 48em) { .grid.col-2 { grid-template-columns: 1fr 1fr; } }
+@media screen and (min-width: 48em) { .grid.col-2 { grid-template-columns: 50% 50%; } }
 
 @media screen and (min-width: 48em) { .grid.col-3 { grid-template-columns: 1fr 1fr 1fr; } }
 
@@ -86,13 +99,29 @@ a.button__covid:hover { background-color: #95ca1e; }
 
 .grid.col-4 { grid-template-columns: 2fr; }
 
-@media screen and (min-width: 48em) { .grid.col-4 { grid-template-columns: 1fr 1fr 1fr; } }
+@media screen and (min-width: 48em) { .grid.col-4 { grid-template-columns: 25% 25% 25% 25%; } }
 
 .logo { position: relative; bottom: -8px; height: 80px; }
 
-.image--index { position: absolute; top: 4rem; right: -4rem; height: 50rem; }
+.image__header--background { background-image: url("/assets/images/headerfoto-Schuytse-Tandartsen-Arnhem.jpg"); background-position: center; background-size: cover; overflow: hidden; }
 
-.flex { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; }
+.image--index { position: absolute; top: 5rem; right: -12rem; height: 44rem; }
+
+.image--usp { height: 14rem; }
+
+svg path { position: relative; top: -1rem; z-index: 99; stroke: none; }
+
+svg path.grey { fill: #EBEBEB; }
+
+svg path.white { fill: #FFFFFF; }
+
+.flex { display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+
+@media screen and (min-width: 48em) { .flex { flex-direction: row; flex-wrap: nowrap; } }
+
+.flex-column { display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+
+.flex-center { display: flex; justify-content: center; align-items: center; }
 
 .space-between { justify-content: space-between; }
 
@@ -103,6 +132,22 @@ a.button__covid:hover { background-color: #95ca1e; }
 .h-100 { height: 100%; }
 
 .m-0 { margin: 0 !important; }
+
+.m-1 { margin: 1rem !important; }
+
+.m-2 { margin: 2rem !important; }
+
+.m-3 { margin: 3rem !important; }
+
+.m-4 { margin: 4rem !important; }
+
+.m-5 { margin: 5rem !important; }
+
+.m-6 { margin: 6rem !important; }
+
+.m-top-6 { margin-top: 6rem !important; }
+
+.m-right-6 { margin-right: 6rem !important; }
 
 .m-left-1 { margin-left: 1rem !important; }
 
@@ -116,6 +161,10 @@ a.button__covid:hover { background-color: #95ca1e; }
 
 .p-4 { padding: 4rem !important; }
 
+.p-5 { padding: 5rem !important; }
+
+.p-6 { padding: 6rem !important; }
+
 .p-left-6 { padding-left: 6rem; }
 
 .p-bottom-6 { padding-bottom: 6rem; }
@@ -128,7 +177,7 @@ a.button__covid:hover { background-color: #95ca1e; }
 
 .z-index-99 { z-index: 99; }
 
-nav { position: relative; background-color: #FFFFFF; font-family: Verdana, Verdana, Helvetica, Arial, sans-serif; letter-spacing: 0; line-height: 1.2; z-index: 9999; }
+nav { position: relative; background-color: #FFFFFF; letter-spacing: 0; line-height: 1.2; z-index: 9999; }
 
 nav ul { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; margin: 0; padding: 2rem 2rem .5rem; list-style: none; }
 
@@ -138,7 +187,7 @@ nav ul li.top ul.children { display: none; flex-direction: column; padding: 0; f
 
 nav ul li.top:hover ul.children { display: flex; position: absolute; top: 1rem; left: 0; z-index: 99; padding-top: 1.5rem; }
 
-nav ul li.top:hover > a, nav ul li.top:hover > a:visited { color: #AEE239; }
+nav ul li.top:hover > a, nav ul li.top:hover > a:visited { color: #8FBE00; }
 
 nav ul li.top a, nav ul li.top a:visited { color: #111111; text-decoration: none; }
 
@@ -152,6 +201,6 @@ nav ul li.top li.child:hover { background-color: lightgrey; }
 
 html { font-size: 16px; }
 
-body { font-family: Verdana, Helvetica, Arial, sans-serif; font-weight: 300; letter-spacing: -1px; line-height: 1.2; background-color: #FFFFFF; color: #111111; margin: 0; }
+body { font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif; font-weight: 400; background-color: #FFFFFF; color: #111111; margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */
