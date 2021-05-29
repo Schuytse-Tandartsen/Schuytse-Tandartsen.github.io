@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
@@ -10,7 +12,7 @@
       <a href="/">
         <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
       </a>
-      <nav class=navbar">
+      <nav class="navbar flex-center">
   <ul>
     
       
@@ -318,11 +320,11 @@
     <main>
       <section class="grid col-2-1 image__header--background">
   <div class="col p-0">
-    <h1 class="relative z-index-99">
+    <h1 class="relative m-6 m-bottom-3 z-index-99">
       Per september openen wij onze deuren
     </h1>
-    <div class="p-left-6 p-bottom-6 relative z-index-99">
-      <button class="background-logo">Inschrijven</button>
+    <div class="flex p-left-6 p-bottom-6 relative z-index-99">
+      <button class="background-primary"><a href="/contact">Contact opnemen</a></button>
       <button class="border__button m-left-1">Bellen</button>
     </div>
   </div>
@@ -357,7 +359,7 @@
       Schuytse Tandartsen neemt de tijd voor u en uw kind.<br />
     </p>
   </div>
-  <div class="col p-6 flex-center background-tertiary">
+  <div class="col p-0-xs p-6 flex-center background-tertiary">
     <picture class="image__container--home h-100">
       <source media="(max-width: 767px)" srcset="/assets/images/480-tanden-poetsen-Schuytse-Tandartsen-Arnhem.jpg">
       <source media="(min-width: 768px)" srcset="/assets/images/480-tanden-poetsen-Schuytse-Tandartsen-Arnhem.jpg">
@@ -365,8 +367,9 @@
     </picture>
   </div>
 </section>
+<div class="image--background"></div>
 
-      <section class="grid col-4 background-white">
+      <section class="grid col-4">
   <div class="col p-4 flex-column flex-center">
     <figure class="flex-column">
       <picture>
@@ -410,12 +413,15 @@
 </section>
 
     </main>
-    <footer class="grid">
+    <footer class="grid flex flex-center space-around p-2 background-white-beige">
+      <a href="/">
+        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
+      </a>
       <nav class=footer">
-  <ul>
+  <ul class="flex background-white-beige">
     
       
-      <li class="top ">
+      <li class="p-1 top ">
         <a href="/algemene-voorwaarden/">Algemene voorwaarden</a>
         <ul class="children">
           
@@ -423,7 +429,7 @@
       </li>
     
       
-      <li class="top ">
+      <li class="p-1 top ">
         <a href="/huisregels/">Huisregels</a>
         <ul class="children">
           
@@ -431,7 +437,7 @@
       </li>
     
       
-      <li class="top ">
+      <li class="p-1 top ">
         <a href="/disclaimer/">Disclaimer</a>
         <ul class="children">
           
@@ -439,7 +445,7 @@
       </li>
     
       
-      <li class="top ">
+      <li class="p-1 top ">
         <a href="/privacy-en-cookieverklaring/">Privacy- en cookieverklaring</a>
         <ul class="children">
           
@@ -447,7 +453,7 @@
       </li>
     
       
-      <li class="top ">
+      <li class="p-1 top ">
         <a href="/klachtenregeling/">Klachtenregeling</a>
         <ul class="children">
           
@@ -474,4 +480,25 @@
 </div>
 
   </body>
+
+<!--
+  Made with ☕️ & ❤️ by 
+
+                88888888ba                       88
+                88      "8b                      88
+                88      ,8P                      88
+                88aaaaaa8P'  ,adPPYba,   ,adPPYb,88
+                88""""88'   a8P_____88  a8"    `Y88
+                88    `8b   8PP"""""""  8b       88
+                88     `8b  "8b,   ,aa  "8a,   ,d88
+                88      `8b  `"Ybbd8"'   `"8bbdP"Y8
+     88888888ba                                     88
+     88      "8b                                    88
+     88      ,8P                                    88
+     88aaaaaa8P'  ,adPPYYba,  8b,dPPYba,    ,adPPYb,88  ,adPPYYba,
+     88""""""'    ""     `Y8  88P'   `"8a  a8"    `Y88  ""     `Y8
+     88           ,adPPPPP88  88       88  8b       88  ,adPPPPP88
+     88           88,    ,88  88       88  "8a,   ,d88  88,    ,88  8,
+     88           `"8bbdP"Y8  88       88   `"8bbdP"Y8  `"8bbdP"Y8  88
+-->
 </html>
