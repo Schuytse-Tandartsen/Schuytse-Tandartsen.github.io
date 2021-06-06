@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
-  <body>
-    <header class="flex flex-center space-between border__header--bottom">
+  <body class="relative top-header-height">
+    <header class="fixed top-0 flex flex-row flex-column-xs flex-center space-between border__nav--bottom background-white w-100 z-index-9999">
       <a href="/">
         <img class="logo p-left-2" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
       </a>
@@ -43,6 +43,23 @@
 </nav>
 
     </header>
+    <div>
+  
+
+  
+
+  <ul>
+    <h2></h2>
+    
+  </ul>
+</div>
+
+<style>
+  li.active a {
+    color: green;
+  }
+</style>
+
     <main>
       
 
@@ -100,12 +117,9 @@
         
       
     </main>
-    <footer class="grid flex flex-center space-around p-2 background-white-beige">
-      <a href="/">
-        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
-      </a>
-      <nav class=footer">
-  <ul class="flex background-white-beige">
+    <footer class="grid relative flex flex-center space-between p-2 p-bottom-0 border__nav--bottom background-tertiary">
+      <nav class="footer">
+  <ul class="flex p-left-0 background-tertiary">
     
       
       <li class="p-1 top ">
@@ -134,6 +148,9 @@
   </ul>
 </nav>
 
+      <a href="/">
+        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
+      </a>
     </footer>
     <a class="button__covid" href="/covid-19/">COVID-19</a>
 
@@ -141,11 +158,11 @@
   <div class="contact_overlay__buttons">
     <a href="/contact/">
       <i class="uil uil-schedule"></i>
-      <span>| Afspraak maken</span>
+      <span>Afspraak maken</span>
     </a>
     <a href="tel:0262001161">
       <i class="uil uil-phone"></i>
-      <span>| 026 - 2001161</span>
+      <span>026 - 2001161</span>
     </a>
   </div>
 </div>
@@ -153,7 +170,7 @@
   </body>
 
 <!--
-  Made with ☕️ & ❤️ by 
+  Made with ☕️ & ❤️ by
 
                 88888888ba                       88
                 88      "8b                      88

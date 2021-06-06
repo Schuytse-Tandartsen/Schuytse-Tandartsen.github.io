@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
-  <body>
-    <header class="flex flex-center space-between border__header--bottom">
+  <body class="relative top-header-height">
+    <header class="fixed top-0 flex flex-row flex-column-xs flex-center space-between border__nav--bottom background-white w-100 z-index-9999">
       <a href="/">
         <img class="logo p-left-2" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
       </a>
@@ -55,13 +55,13 @@
         
           <section class="grid col-3"/>
             <div class="col p-2">
-              <h3 id="tijdig-afzeggen-afspraak">Tijdig afzeggen afspraak</h3><p>Als u een afspraak heeft gemaakt, rekenen wij op uw komst. Lukt het niet om uw afspraak na te komen, geef dit dan zo snel mogelijk aan ons door. Bel in ieder geval 24 uur voor uw geplande afspraak.</p>
-            </div>
-            <div class="col p-2">
               <h3 id="contact">Contact</h3><p>Heeft u nog vragen dan kunt u contact met ons opnemen via het contactformulier. Indien u een afspraak wilt maken, neem dan telefonisch contact met ons op.</p>
             </div>
             <div class="col p-2">
-              <div class="contact_methods">  <div class="contact_method">    <i class="uil uil-phone"></i>    <span>026 - 2001161</span>  </div>  <div class="contact_method">    <i class="uil uil-envelope"></i>    <span>info@schuytsetandartsen.nl</span>  </div>  <div class="contact_method">    <i class="uil uil-map-pin"></i>    <address>      <div>Bakerwaard 29</div>      <div>6846 EM</div>      <div>Arnhem</div>    </address>  </div></div>
+              <h3 id="tijdig-afzeggen-afspraak">Tijdig afzeggen afspraak</h3><p>Als u een afspraak heeft gemaakt, rekenen wij op uw komst. Lukt het niet om uw afspraak na te komen, geef dit dan zo snel mogelijk aan ons door. Bel in ieder geval 24 uur voor uw geplande afspraak.</p>
+            </div>
+            <div class="col p-2">
+              <div class="contact_methods">  <div class="contact_method">    <i class="uil uil-phone"></i>    <a href="tel:0262001161">026 - 2001161</a>  </div>  <div class="contact_method">    <i class="uil uil-envelope"></i>    <a href="mailto:info@schuytsetandartsen.nl">info@schuytsetandartsen.nl</a>  </div>  <div class="contact_method">    <i class="uil uil-map-pin"></i>    <address>      <div>Bakerwaard 29</div>      <div>6846 EM</div>      <div>Arnhem</div>    </address>  </div></div>
             </div>
           </section>
         
@@ -71,13 +71,13 @@
         
           <section class="grid col-3"/>
             <div class="col p-2">
-              <h3 id="openingstijden">Openingstijden</h3><p>Maandag	  08:00 - 16:30</p><p>Dinsdag		08:00 - 16:30</p><p>Woensdag	08:00 - 16:30</p><p>Donderdag	08:00 - 16:30</p><p>Vrijdag		08:00 - 16:30</p><p>Zaterdag	Gesloten</p><p>Zondag		Gesloten</p>
+              <h3 id="openingstijden">Openingstijden</h3><ul class="w-75 p-0">  <li class="flex flex-row space-between no-bullets">    <span>      Maandag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Dinsdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Woensdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Donderdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Vrijdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Zaterdag    </span>    <span class="p-left-2 flex-end">      Gesloten    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Zondag    </span>    <span>      Gesloten    </span>  </li></ul>
             </div>
             <div class="col p-2">
               <form id="contact" method="POST" action="https://script.google.com/macros/s/AKfycbw78KZ0TFaUOuPEoTlF3eoJt7T4g2FSQdrqugyvAQgO6rak1_ef-q7OMa_A-Hzt1b4_bA/exec">  <input type="hidden" name="_honeypot" value="" />  <input type="hidden" name="Aanhef" value="N/A" />  <fieldset>    <label for="voornaam">Voornaam</label>    <input type="text" id="voornaam" name="Voornaam" placeholder="Vul uw voornaam in." />    <label for="achternaam">Achternaam</label>    <input type="text" id="achternaam" name="Achternaam" placeholder="Vul uw achternaam in." />    <label for="email">Email</label>    <input type="email" id="email" name="Email" placeholder="Vul uw email in." />    <label for="telefoon">Telefoonnummer</label>    <input type="tel" id="telefoon" name="Telefoon" placeholder="Vul uw telefoonnummer in." />    <label for="opmerking">Opmerking</label>    <textarea id="opmerking" name="Opmerking" placeholder="Schrijf uw opmerking."></textarea>    <button class="background-primary" type="submit" form="contact" value="Verstuur">Verstuur</button>  </fieldset>  <!-- These fields are used by mailthis.to --></form>
             </div>
             <div class="col p-2">
-              <div class="w-100 flex">  <picture class="image__container--home w-100">    <source media="(max-width: 767px)" srcset="/assets/images/contact-Schuytse-Tandartsen-Arnhem.png" />    <source media="(min-width: 768px)" srcset="/assets/images/contact-Schuytse-Tandartsen-Arnhem.png" />    <img class="w-50" src="/assets/images/contact-Schuytse-Tandartsen-Arnhem.png" alt="Boom met bellende kies" />  </picture></div>
+              <div class="w-100 flex">  <picture class="image__container--home w-100">    <source media="(max-width: 767px)" srcset="/assets/images/contact-Schuytse-Tandartsen-Arnhem.png" />    <source media="(min-width: 768px)" srcset="/assets/images/contact-Schuytse-Tandartsen-Arnhem.png" />    <img class="w-75" src="/assets/images/contact-Schuytse-Tandartsen-Arnhem.png" alt="Boom met bellende kies" />  </picture></div>
             </div>
           </section>
         
@@ -96,12 +96,9 @@
         
       
     </main>
-    <footer class="grid flex flex-center space-around p-2 background-white-beige">
-      <a href="/">
-        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
-      </a>
-      <nav class=footer">
-  <ul class="flex background-white-beige">
+    <footer class="grid relative flex flex-center space-between p-2 p-bottom-0 border__nav--bottom background-tertiary">
+      <nav class="footer">
+  <ul class="flex p-left-0 background-tertiary">
     
       
       <li class="p-1 top ">
@@ -130,6 +127,9 @@
   </ul>
 </nav>
 
+      <a href="/">
+        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
+      </a>
     </footer>
     <a class="button__covid" href="/covid-19/">COVID-19</a>
 
@@ -137,11 +137,11 @@
   <div class="contact_overlay__buttons">
     <a href="/contact/">
       <i class="uil uil-schedule"></i>
-      <span>| Afspraak maken</span>
+      <span>Afspraak maken</span>
     </a>
     <a href="tel:0262001161">
       <i class="uil uil-phone"></i>
-      <span>| 026 - 2001161</span>
+      <span>026 - 2001161</span>
     </a>
   </div>
 </div>
@@ -149,7 +149,7 @@
   </body>
 
 <!--
-  Made with ☕️ & ❤️ by 
+  Made with ☕️ & ❤️ by
 
                 88888888ba                       88
                 88      "8b                      88

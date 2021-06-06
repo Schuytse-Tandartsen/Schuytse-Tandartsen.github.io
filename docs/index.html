@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
-  <body>
-    <header class="flex flex-center space-between border__header--bottom">
+  <body class="relative top-header-height">
+    <header class="fixed top-0 flex flex-row flex-column-xs flex-center space-between border__nav--bottom background-white w-100 z-index-9999">
       <a href="/">
         <img class="logo p-left-2" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
       </a>
@@ -51,7 +51,7 @@
     </h1>
     <div class="flex p-6 p-top-0 relative z-index-99">
       <button class="background-primary"><a href="/contact">Contact opnemen</a></button>
-      <button class="border__button m-left-1 m-top-1-xs"><a href="tel:0262001161">Bel ons</a></button>
+      <button class="border__button background-white m-left-1 m-top-1-xs"><a href="tel:0262001161">Bel ons</a></button>
     </div>
   </div>
   <!-- <div class="col relative z-index-99">
@@ -85,7 +85,7 @@
       Schuytse Tandartsen neemt de tijd voor u en uw kind.<br />
     </p>
   </div>
-  <div class="col p-0-xs p-6 flex-center background-tertiary">
+  <div class="col p-0-xs p-6 p-bottom-0 flex-center background-white">
     <picture class="image__container--home h-100">
       <source media="(max-width: 767px)" srcset="/assets/images/480-tanden-poetsen-Schuytse-Tandartsen-Arnhem.jpg">
       <source media="(min-width: 768px)" srcset="/assets/images/480-tanden-poetsen-Schuytse-Tandartsen-Arnhem.jpg">
@@ -93,58 +93,79 @@
     </picture>
   </div>
 </section>
-<div class="image--background"></div>
+<div class="image--background flex flex-center p-4 p-right-3 p-left-3 background-white">
+  <blockquote class="m-0">
+    "Bij Schuytse Tandartsen staan gezondheid en veiligheid voorop"
+  </blockquote>
+</div>
 
       <section class="grid col-4">
-  <div class="col p-4 flex-column flex-center">
-    <figure class="flex-column flex-center">
+  <div class="col p-4 p-top-0 px-0-xs flex-column flex-start flex-grow">
+    <figure class="flex-column flex-center flex-grow usp background-white-beige">
       <picture>
-        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-5.-angsttandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
-        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-5.-angsttandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
-        <img class="image--usp h-100" src="/assets/images/usp/400-usp-5.-angsttandarts-arnhem-Schuytse-Tandartsen-Arnhem.png" alt="Angsttandarts Arnhem" />
+        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-5-transparant-angsttandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
+        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-5-transparant-angsttandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
+        <img class="image--usp" src="/assets/images/usp/400-usp-5-transparant-angsttandarts-arnhem-Schuytse-Tandartsen-Arnhem.png" alt="Angsttandarts Arnhem" />
       </picture>
-      <figcaption>Angsttandarts</figcaption>
+      <figcaption class="p-1 background-white h-100">
+        <h5 class="m-0">Angsttandarts</h5>
+        <p>
+          Onze mondzorgprofessionals stellen u op uw gemak en nemen de tijd voor u. De tandheelkundige behandelingen worden stapsgewijs met u besproken en toegelicht. Ook hebben onze mondzorgprofessionals kennis in hoe we angst en pijn bij u kunnen wegnemen.
+        </p>
+      </figcaption>
     </figure>
   </div>
-  <div class="col p-4 flex-column flex-center">
-    <figure class="flex-column flex-center">
+  <div class="col p-4 p-top-0 px-0-xs flex-column flex-start flex-grow">
+    <figure class="flex-column flex-center flex-grow usp background-lighter-blue">
       <picture>
-        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-6-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
-        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-6-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
-        <img class="image--usp h-100" src="/assets/images/usp/400-usp-6-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.png" alt="Kindertandarts" />
+        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-6-blue-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.jpg">
+        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-6-blue-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.jpg">
+        <img class="image--usp" src="/assets/images/usp/400-usp-6-blue-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.jpg" alt="Kindertandarts" />
       </picture>
-      <figcaption>Kindertandarts</figcaption>
+      <figcaption class="p-1 background-white h-100">
+        <h5 class="m-0">Kindertandarts</h5>
+        <p>
+          De basis voor een gezond gebit wordt in de kinderjaren gelegd. Uw kind heeft er een leven lang plezier van als u vroeg start met het aanleren van goede poetsgewoontes en het bezoeken van de tandarts. Onze mondzorgprofessionals hebben jarenlang ervaring in het behandelen, geruststellen en vertrouwen winnen van kinderen en adolescenten.
+        </p>
+      </figcaption>
     </figure>
   </div>
-  <div class="col p-4 flex-center">
-    <figure class="flex-column flex-center">
+  <div class="col p-4 p-top-0 px-0-xs flex-column flex-start flex-grow">
+    <figure class="flex-column flex-center flex-grow usp background-white-beige">
       <picture>
-        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-7-kwaliteit-Schuytse-Tandartsen-Arnhem.png">
-        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-7-kwaliteit-Schuytse-Tandartsen-Arnhem.png">
-        <img class="image--usp h-100" src="/assets/images/usp/400-usp-7-kwaliteit-Schuytse-Tandartsen-Arnhem.png" alt="Kwaliteit" />
+        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-7-transparant-kwaliteit-Schuytse-Tandartsen-Arnhem.png">
+        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-7-transparant-kwaliteit-Schuytse-Tandartsen-Arnhem.png">
+        <img class="image--usp" src="/assets/images/usp/400-usp-7-transparant-kwaliteit-Schuytse-Tandartsen-Arnhem.png" alt="Kwaliteit" />
       </picture>
-      <figcaption>Kwaliteit</figcaption>
+      <figcaption class="p-1 background-white h-100">
+        <h5 class="m-0">Kwaliteit</h5>
+        <p>
+          Bij Schuytse Tandartsen kunt u rekenen op patiëntgerichte tandheelkunde. Ons personeel is vakbekwaam, professioneel en werkt volgens protocollen en richtlijnen. Doordat wij in ons personeel en moderne apparatuur investeren kunnen wij u voorzien in al uw tandheelkundige zorgvragen en behandelbehoeften.
+        </p>
+      </figcaption>
     </figure>
   </div>
-  <div class="col p-4 flex-column flex-center">
-    <figure class="flex-column flex-center">
+  <div class="col p-4 p-top-0 px-0-xs flex-column flex-start flex-grow">
+    <figure class="flex-column flex-center flex-grow usp background-lighter-blue">
       <picture>
-        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-8-korte-wachttijden-Schuytse-Tandartsen-Arnhem.png">
-        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-8-korte-wachttijden-Schuytse-Tandartsen-Arnhem.png">
-        <img class="image--usp h-100" src="/assets/images/usp/400-usp-8-korte-wachttijden-Schuytse-Tandartsen-Arnhem.png" alt="Korte wachttijden" />
+        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-8-blue-korte-wachttijden-Schuytse-Tandartsen-Arnhem.jpg">
+        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-8-blue-korte-wachttijden-Schuytse-Tandartsen-Arnhem.jpg">
+        <img class="image--usp" src="/assets/images/usp/400-usp-8-blue-korte-wachttijden-Schuytse-Tandartsen-Arnhem.jpg" alt="Korte wachttijden" />
       </picture>
-      <figcaption>Korte wachttijden</figcaption>
+      <figcaption class="p-1 background-white h-100">
+        <h5 class="m-0">Korte wachttijden</h5>
+        <p>
+          Bij ons kunt u direct terecht voor uw zorgvraag, behandeling of pijnklacht. U hoeft daarvoor niet lang te wachten. Neem contact voor een afspraak.
+        </p>
+      </figcaption>
     </figure>
   </div>
 </section>
 
     </main>
-    <footer class="grid flex flex-center space-around p-2 background-white-beige">
-      <a href="/">
-        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
-      </a>
-      <nav class=footer">
-  <ul class="flex background-white-beige">
+    <footer class="grid flex flex-center space-between p-2 p-bottom-0 border__nav--bottom background-tertiary">
+      <nav class="footer">
+  <ul class="flex p-left-0 background-tertiary">
     
       
       <li class="p-1 top ">
@@ -173,6 +194,9 @@
   </ul>
 </nav>
 
+      <a href="/">
+        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
+      </a>
     </footer>
     <a class="button__covid" href="/covid-19/">COVID-19</a>
 
@@ -180,11 +204,11 @@
   <div class="contact_overlay__buttons">
     <a href="/contact/">
       <i class="uil uil-schedule"></i>
-      <span>| Afspraak maken</span>
+      <span>Afspraak maken</span>
     </a>
     <a href="tel:0262001161">
       <i class="uil uil-phone"></i>
-      <span>| 026 - 2001161</span>
+      <span>026 - 2001161</span>
     </a>
   </div>
 </div>
@@ -192,7 +216,7 @@
   </body>
 
 <!--
-  Made with ☕️ & ❤️ by 
+  Made with ☕️ & ❤️ by
 
                 88888888ba                       88
                 88      "8b                      88
