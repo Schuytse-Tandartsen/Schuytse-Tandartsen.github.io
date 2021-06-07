@@ -36,9 +36,9 @@ h1 { font-size: 3rem; font-weight: 400; letter-spacing: -1px; line-height: 1.1; 
 
 @media screen and (min-width: 48em) { h1 { font-size: 5rem; } }
 
-h2 { font-size: 2rem; font-weight: 400; color: #8FBE00; }
+h2 { font-size: 2rem; font-weight: 400; color: #8FBE00; margin: 0; }
 
-h3 { margin: 0; font-size: 1.5rem; font-weight: 400; color: #8FBE00; }
+h3 { font-size: 1.5rem; font-weight: 400; color: #8FBE00; }
 
 h4, h5 { line-height: 1.6; color: #8FBE00; }
 
@@ -166,7 +166,7 @@ figure.usp picture { display: flex; justify-content: center; align-items: center
 
 figure.usp figcaption { width: auto; color: #111111; text-align: left; }
 
-figure.usp figcaption h5 { color: #111111; font-size: 18px; font-weight: 400; }
+figure.usp figcaption h5 { font-size: 18px; font-weight: 400; }
 
 figure.usp figcaption p { display: flex; flex: 1; font-size: 14px; }
 
@@ -302,6 +302,8 @@ svg path.white { fill: #FFFFFF; }
 
 .p-left-3 { padding-left: 3rem !important; }
 
+.p-left-4 { padding-left: 4rem !important; }
+
 .relative { position: relative; }
 
 .absolute { position: absolute; }
@@ -348,12 +350,16 @@ nav ul li.top li.child:first-child { border-top: 3px solid #111111; }
 
 nav ul li.top li.child:hover { background-color: lightgrey; }
 
-html { font-size: 16px; }
+html { font-size: 16px; min-height: 100vh; height: 100%; }
 
-body { font-family: "Roboto", Verdana, Helvetica, Arial, sans-serif; font-weight: 300; background-color: #FFFFFF; color: #111111; margin: 0; min-height: 100vh; }
+body { font-family: "Roboto", Verdana, Helvetica, Arial, sans-serif; font-weight: 300; background-color: #FFFFFF; color: #111111; margin: 0; height: 100%; }
 
-main, footer { position: relative; top: 60px; }
+main { position: relative; top: 60px; min-height: 100%; }
 
-@media screen and (min-width: 48em) { main, footer { top: 88px; } }
+@media screen and (min-width: 48em) { main { top: 88px; } }
+
+footer { position: relative; bottom: 0; top: 60px; }
+
+@media screen and (min-width: 48em) { footer { top: 88px; } }
 
 /*# sourceMappingURL=styles.css.map */
