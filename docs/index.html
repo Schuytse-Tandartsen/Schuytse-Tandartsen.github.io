@@ -10,7 +10,7 @@
   <body class="relative top-header-height">
     <header class="fixed top-0 flex flex-row flex-column-xs flex-center space-between border__nav--bottom background-white w-100 z-index-9999">
       <a href="/">
-        <img class="logo p-left-2" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
+        <img class="logo p-left-2 relative z-index-99999" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
       </a>
       <nav class="navbar flex-center">
   <ul>
@@ -67,7 +67,7 @@
   <!-- <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
     <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" class="white"></path>
   </svg> -->
-  <div class="col p-4 background-white">
+  <div class="col p-4 p-bottom-0 background-white">
     <h3 class="m-0">Schuytse Tandartsen</h2>
     <p>
       Schuytse Tandartsen is gelegen Arnhem Zuid in de wijk Schuytgraaf. Een tandartspraktijk voor het gezin met een specialisatie in kindertandheelkunde. Ook voeren wij verschillende tandheelkundige behandelingen uit zoals Implantologie, Endotologie, Parodontologie en meer…<br />
@@ -81,11 +81,11 @@
       Schuytse Tandartsen neemt de tijd voor u en uw kind.
     </p>
   </div>
-  <div class="col p-0-xs p-6 p-bottom-0 flex-center background-white">
-    <picture class="image__container--home h-100">
-      <source media="(max-width: 767px)" srcset="/assets/images/480-tanden-poetsen-Schuytse-Tandartsen-Arnhem.jpg">
-      <source media="(min-width: 768px)" srcset="/assets/images/480-tanden-poetsen-Schuytse-Tandartsen-Arnhem.jpg">
-      <img class="h-100" src="/assets/images/480-tanden-poetsen-Schuytse-Tandartsen-Arnhem.jpg" alt="gebit tandartsen" />
+  <div class="col p-0-xs p-4 p-bottom-0 flex-center background-white">
+    <picture>
+      <source media="(max-width: 767px)" srcset="/assets/images/800-gebit-Schuytse-Tandartsen-Arnhem.jpg">
+      <source media="(min-width: 768px)" srcset="/assets/images/800-gebit-Schuytse-Tandartsen-Arnhem.jpg">
+      <img class="w-100" src="/assets/images/800-gebit-Schuytse-Tandartsen-Arnhem.jpg" alt="gebit tandartsen" />
     </picture>
   </div>
 </section>
@@ -114,9 +114,9 @@
   <div class="col p-4 p-top-0 px-0-xs flex-column flex-start flex-grow">
     <figure class="flex-column flex-center flex-grow usp background-lighter-blue">
       <picture>
-        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-6-blue-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.jpg">
-        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-6-blue-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.jpg">
-        <img class="image--usp" src="/assets/images/usp/400-usp-6-blue-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.jpg" alt="Kindertandarts" />
+        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-6-transparant-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
+        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-6-transparant-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.png">
+        <img class="image--usp" src="/assets/images/usp/400-usp-6-transparant-kindertandarts-arnhem-Schuytse-Tandartsen-Arnhem.png" alt="Kindertandarts" />
       </picture>
       <figcaption class="p-1 color-primary background-white h-100">
         <h5 class="m-0">Kindertandarts</h5>
@@ -144,9 +144,9 @@
   <div class="col p-4 p-top-0 px-0-xs flex-column flex-start flex-grow">
     <figure class="flex-column flex-center flex-grow usp background-lighter-blue">
       <picture>
-        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-8-blue-korte-wachttijden-Schuytse-Tandartsen-Arnhem.jpg">
-        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-8-blue-korte-wachttijden-Schuytse-Tandartsen-Arnhem.jpg">
-        <img class="image--usp" src="/assets/images/usp/400-usp-8-blue-korte-wachttijden-Schuytse-Tandartsen-Arnhem.jpg" alt="Korte wachttijden" />
+        <source media="(max-width: 767px)" srcset="/assets/images/usp/400-usp-8-korte-wachttijden-Schuytse-Tandartsen-Arnhem.png">
+        <source media="(min-width: 768px)" srcset="/assets/images/usp/400-usp-8-korte-wachttijden-Schuytse-Tandartsen-Arnhem.png">
+        <img class="image--usp" src="/assets/images/usp/400-usp-8-korte-wachttijden-Schuytse-Tandartsen-Arnhem.png" alt="Korte wachttijden" />
       </picture>
       <figcaption class="p-1 color-primary background-white h-100">
         <h5 class="m-0">Korte wachttijden</h5>
@@ -159,41 +159,58 @@
 </section>
 
     </main>
-    <footer class="grid flex flex-center space-between p-2 p-bottom-0 border__nav--bottom background-tertiary">
-      <nav class="footer">
-  <ul class="flex p-left-0 background-tertiary">
-    
+    <footer class="grid flex flex-center space-between p-2 p-bottom-0 border__nav--bottom background-white-beige">
+  <nav class="footer">
+    <ul class="flex p-left-0 background-white-beige">
       
-      <li class="p-1 top ">
-        <a href="/algemene-voorwaarden/">Algemene voorwaarden</a>
-        <ul class="children">
-          
-        </ul>
-      </li>
-    
+        
+        <li class="p-1 top ">
+          <a href="/algemene-voorwaarden/">Algemene voorwaarden</a>
+          <ul class="children">
+            
+          </ul>
+        </li>
       
-      <li class="p-1 top ">
-        <a href="/disclaimer/">Disclaimer</a>
-        <ul class="children">
-          
-        </ul>
-      </li>
-    
+        
+        <li class="p-1 top ">
+          <a href="/disclaimer/">Disclaimer</a>
+          <ul class="children">
+            
+          </ul>
+        </li>
       
-      <li class="p-1 top ">
-        <a href="/privacy-en-cookieverklaring/">Privacy- en cookieverklaring</a>
-        <ul class="children">
-          
-        </ul>
-      </li>
-    
-  </ul>
-</nav>
+        
+        <li class="p-1 top ">
+          <a href="/privacy-en-cookieverklaring/">Privacy- en cookieverklaring</a>
+          <ul class="children">
+            
+          </ul>
+        </li>
+      
+    </ul>
+  </nav>
+  <a href="/">
+    <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
+  </a>
+</footer>
+<div class="logobar">
+  <div class="logobar--logo">
+    <a href="https://www.ivorenkruis.nl/">
+      <img src="/assets/images/Ivoren Kruis.png" alt="Ivoren Kruis logo"/>
+    </a>
+  </div>
+  <div class="logobar--logo">
+    <a href="https://www.knmt.nl/home-page">
+      <img src="/assets/images/KNMT.png" alt="KNMT logo" />
+    </a>
+  </div>
+  <div class="logobar--logo">
+    <a href="https://tandartsregister.nl/">
+      <img src="/assets/images/KRT.png" alt="KRT logo" />
+    </a>
+  </div>
+</div>
 
-      <a href="/">
-        <img class="logo" src="/assets/images/400-logo-Schuytse-Tandartsen-Arnhem.png" alt="logo Schuytse Tandartsen Arnhem"/>
-      </a>
-    </footer>
     <a class="button__covid" href="/covid-19/">COVID-19</a>
 
     <div class="contact_overlay">
@@ -210,7 +227,6 @@
 </div>
 
   </body>
-
 <!--
   Made with ☕️ & ❤️ by
 

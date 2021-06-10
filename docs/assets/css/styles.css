@@ -50,11 +50,13 @@ figcaption { font-size: 1.2rem; font-weight: 400; text-align: center; color: #8F
 
 blockquote { font-size: 2.2rem; font-weight: 300; font-style: italic; }
 
+address { font-style: normal; }
+
 a { color: #8FBE00; }
 
 main ul { list-style: none; }
 
-main ul li { display: flex; flex-direction: row; align-items: center; line-height: 2rem; }
+main ul li { display: flex; flex-direction: row; line-height: 2rem; }
 
 main ul li::before { content: "\2022"; color: #8FBE00; font-weight: bold; margin-right: .5rem; margin-left: -1rem; }
 
@@ -66,7 +68,9 @@ form fieldset { display: flex; flex-direction: column; flex-wrap: nowrap; paddin
 
 form label { margin-bottom: .2em; }
 
-form input, form textarea { width: 85%; font-size: 1em; min-height: 2.5rem; margin-bottom: 1em; padding: 0 2.5em 0 .5em; border: none; border-radius: 0; font-family: inherit; }
+form input, form textarea { width: 93%; font-size: 1em; min-height: 2.5rem; margin-bottom: 1em; padding: .25rem .75rem; border: none; border-radius: 0; font-family: inherit; }
+
+form textarea { padding-top: 1rem; }
 
 form section { display: flex; flex-direction: row; }
 
@@ -120,7 +124,7 @@ a.button__covid:hover { background-color: #2b2b2b; }
 
 .contact_methods .contact_method i { padding: 0.5rem; font-size: 1.2rem; }
 
-.contact_methods .contact_method span, .contact_methods .contact_method address { padding: 0.5rem; }
+.contact_methods .contact_method span { padding: 0.5rem; }
 
 .grid { display: grid; grid-template-columns: 100%; }
 
@@ -144,11 +148,7 @@ a.button__covid:hover { background-color: #2b2b2b; }
 
 @media screen and (min-width: 48em) { .logo { height: 88px; } }
 
-.image__header--background { background-image: url("/assets/images/headerfoto-Schuytse-Tandartsen-Arnhem.jpg"); background-position: center center; background-size: cover; overflow: hidden; }
-
-.image__container--home { height: 100%; }
-
-.image__container--home img { height: 100%; }
+.image__header--background { background-image: url("/assets/images/headerfoto-Schuytse-Tandartsen-Arnhem-tiny.jpg"); background-position: center center; background-size: cover; overflow: hidden; }
 
 .image--background { background-position: center center; background-size: cover; height: 200px; }
 
@@ -199,6 +199,12 @@ svg path.white { fill: #FFFFFF; }
 .space-around { justify-content: space-around; }
 
 .flex-grow { flex-grow: 1; }
+
+.align-items-center { display: flex; align-items: center; }
+
+.align-items-start { display: flex; align-items: start; }
+
+.align-self-start { align-self: flex-start; }
 
 .w-100 { width: 100%; }
 
@@ -262,9 +268,11 @@ svg path.white { fill: #FFFFFF; }
 
 @media screen and (min-width: 48em) { .p-2 { padding: 2rem !important; } }
 
-.p-3 { padding: 1.5rem !important; }
+.p-3 { padding: 1rem 3rem !important; }
 
 @media screen and (min-width: 48em) { .p-3 { padding: 3rem !important; } }
+
+@media screen and (max-width: 767px) { .p-3-xs { padding: 1rem 3rem !important; } }
 
 .p-4 { padding: 3rem !important; }
 
@@ -284,7 +292,11 @@ svg path.white { fill: #FFFFFF; }
 
 .p-top-0 { padding-top: 0 !important; }
 
+.p-top-3 { padding-top: 3rem !important; }
+
 .p-right-0 { padding-right: 0 !important; }
+
+@media screen and (min-width: 48em) { .p-right-0-md { padding-right: 0rem !important; } }
 
 .p-right-1 { padding-right: 1rem !important; }
 
@@ -294,7 +306,15 @@ svg path.white { fill: #FFFFFF; }
 
 .p-bottom-0 { padding-bottom: 0 !important; }
 
+.p-bottom-1 { padding-bottom: 1rem !important; }
+
+.p-bottom-2 { padding-bottom: 2rem !important; }
+
+.p-bottom-3 { padding-bottom: 3rem !important; }
+
 .p-left-0 { padding-left: 0 !important; }
+
+@media screen and (min-width: 48em) { .p-left-0-md { padding-left: 0rem !important; } }
 
 .p-left-1 { padding-left: 1rem !important; }
 
@@ -323,6 +343,16 @@ svg path.white { fill: #FFFFFF; }
 .z-index-999 { z-index: 999; }
 
 .z-index-9999 { z-index: 9999; }
+
+.z-index-99999 { z-index: 99999; }
+
+.logobar { position: relative; top: 60px; display: flex; flex-direction: column; align-items: center; padding: 1rem; }
+
+.logobar .logobar--logo img { height: 50px; padding: 1rem; }
+
+@media screen and (min-width: 512px) { .logobar { flex-direction: row; justify-content: space-around; } }
+
+@media screen and (min-width: 768px) { .logobar { justify-content: flex-end; } .logobar .logobar--logo { margin-left: 4rem; } }
 
 nav { position: relative; background-color: #FFFFFF; letter-spacing: 0; line-height: 1.2; z-index: 9999; }
 
@@ -360,6 +390,6 @@ main { position: relative; top: 60px; min-height: 100%; }
 
 footer { position: relative; bottom: 0; top: 60px; }
 
-@media screen and (min-width: 48em) { footer { top: 88px; } }
+@media screen and (min-width: 48em) { footer { top: 60px; } }
 
 /*# sourceMappingURL=styles.css.map */
