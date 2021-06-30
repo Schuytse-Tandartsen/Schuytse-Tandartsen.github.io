@@ -17,6 +17,8 @@ Run with live reload:
 bundle exec jekyll serve --livereload
 ```
 
+## Pricing page
 
-
-
+- The plugin is inside the \_plugins-folder.
+- The config is inside the config.yml-file.
+- The layout used is layouts/prices.html.
