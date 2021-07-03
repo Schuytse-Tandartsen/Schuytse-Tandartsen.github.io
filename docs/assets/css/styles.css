@@ -416,7 +416,7 @@ nav ul li.top li.child { padding: .5rem 1rem; background-color: #EFEFEF; }
 
 nav ul li.top li.child:hover { background-color: lightgrey; }
 
-.side_navigation { height: 100%; background-color: #EFEFEF; }
+.side_navigation { height: 100%; background-color: #d2efa5; }
 
 .side_navigation ul { display: flex; flex-direction: column; flex-wrap: nowrap; padding: 2rem; padding-left: 4rem; height: 100%; }
 
