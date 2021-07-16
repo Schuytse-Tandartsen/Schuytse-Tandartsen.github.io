@@ -420,7 +420,7 @@ header .nav-logo img { position: absolute; bottom: -3px; height: 100%; }
 
 html { font-size: 16px; min-height: 100vh; height: 100%; }
 
-body { font-family: "Roboto", Verdana, Helvetica, Arial, sans-serif; font-weight: 300; background-color: #FFFFFF; color: #111111; margin: 0; height: 100%; overflow-wrap: hidden; }
+body { font-family: "Roboto", Verdana, Helvetica, Arial, sans-serif; font-weight: 300; background-color: #FFFFFF; color: #111111; margin: 0; height: 100%; overflow-x: hidden; }
 
 footer { position: relative; bottom: 0; top: 60px; }
 
