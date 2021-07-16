@@ -376,9 +376,13 @@ svg path.white { fill: #FFFFFF; }
 
 .logobar .logobar--logo img { height: 50px; padding: 1rem; }
 
-@media screen and (min-width: 512px) { .logobar { flex-direction: row; justify-content: space-around; } }
+.logobar .logobar--social a { height: 86px; display: flex; flex-direction: row; align-items: center; color: #19227d; text-decoration: none; }
 
-@media screen and (min-width: 768px) { .logobar { justify-content: flex-end; } .logobar .logobar--logo { margin-left: 4rem; } }
+.logobar .logobar--social a img { width: 35px; padding: 1rem; }
+
+.logobar .logobar--social a span { font-weight: bold; font-size: 0.9rem; }
+
+@media screen and (min-width: 780px) { .logobar { flex-direction: row; justify-content: space-around; } }
 
 table { border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; min-width: 200px; }
 
