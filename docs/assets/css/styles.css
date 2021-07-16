@@ -284,6 +284,10 @@ svg path.white { fill: #FFFFFF; }
 
 @media screen and (max-width: 767px) { .m-top-1-xs { margin-top: 1rem !important; } }
 
+.m-top-2 { margin-top: 2rem !important; }
+
+@media screen and (max-width: 767px) { .m-top-2-xs { margin-top: 2rem !important; } }
+
 .m-left-1 { margin-left: 0 !important; }
 
 @media screen and (min-width: 48em) { .m-left-1 { margin-left: 1rem !important; } }
