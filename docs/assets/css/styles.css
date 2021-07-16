@@ -430,4 +430,6 @@ footer { position: relative; bottom: 0; top: 60px; }
 
 @media screen and (min-width: 48em) { footer { top: 88px; } }
 
+footer ul { list-style: none; }
+
 /*# sourceMappingURL=styles.css.map */
