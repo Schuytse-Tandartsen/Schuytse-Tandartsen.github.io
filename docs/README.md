@@ -4,11 +4,17 @@
 ### Aanpassingen
 Aanpassingen kunnen worden aangepast via de Github-website.
 
-In het mapje pages staan alle paginas op de website.
+In het mapje pages staan alle paginas van de website.
 
 **Let op:** Als je een permalink aanpast dien je ook [de navigatie](https://github.com/Schuytse-Tandartsen/website/blob/main/_data/navigation.yml) aan te passen.
 
 Aanpassingen worden redelijk snel gereleased naar [https://schuytse-tandartsen.github.io/](https://schuytse-tandartsen.github.io/)
+
+### Notatie
+
+Bij het aanpassen van de website maak je gebruik van [Markdown](https://www.markdownguide.org/cheat-sheet/), daarnaast kun je gebruik maken van secties en kolommen.
+
+Secties zijn horizontale scheidingen en worden beschreven met `+++`, kolommen geef je aan door middel van `///`.
 
 ### Live zetten
 1. Ga naar de [Actions-pagina voor Production deploy](https://github.com/Schuytse-Tandartsen/website/actions/workflows/production.yml).
