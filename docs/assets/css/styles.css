@@ -236,6 +236,8 @@ svg path.white { fill: #FFFFFF; }
 
 .hidden { display: none; }
 
+.block { display: block; }
+
 .w-100 { width: 100%; }
 
 .w-75 { width: 100%; }
@@ -372,7 +374,7 @@ svg path.white { fill: #FFFFFF; }
 
 .p-left-4 { padding-left: 4rem !important; }
 
-.logobar { position: relative; top: 88px; display: flex; flex-direction: column; align-items: center; padding: 1rem; }
+.logobar { position: relative; display: flex; flex-direction: column; align-items: center; padding: 1rem; }
 
 .logobar .logobar--logo img { height: 50px; padding: 1rem; }
 
@@ -430,9 +432,7 @@ html { font-size: 16px; min-height: 100vh; height: 100%; overflow-x: hidden; }
 
 body { font-family: "Roboto", Verdana, Helvetica, Arial, sans-serif; font-weight: 300; background-color: #FFFFFF; color: #111111; margin: 0; height: 100%; overflow-x: hidden; }
 
-footer { position: relative; bottom: 0; top: 60px; }
-
-@media screen and (min-width: 48em) { footer { top: 88px; } }
+footer { position: relative; bottom: 0; }
 
 footer ul { list-style: none; }
 
