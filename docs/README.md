@@ -20,6 +20,9 @@ Secties zijn horizontale scheidingen en worden beschreven met `+++`, kolommen ge
 1. Ga naar de [Actions-pagina voor Production deploy](https://github.com/Schuytse-Tandartsen/website/actions/workflows/production.yml).
 2. Klik op "Run workflow" en dan in het dropdown nogmaals op de groene knop "Run workflow".
 
+### Tarieven
+De tarieven-pagina bestaat uit 2 delen, de data kun je vinden in `_data/tarieven.xlsx`. De tekst en mark-up staat in `_layouts/prices.html`.
+
 ## Installation
 Use ruby 3.0.1:
 ```
