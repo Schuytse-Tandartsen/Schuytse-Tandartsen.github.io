@@ -76,7 +76,7 @@ label.required:after { content: " *"; }
 
 input, textarea { width: 93%; font-size: 1em; min-height: 2.5rem; margin-bottom: 1em; padding: .25rem .75rem; border: none; border-radius: 0; font-family: inherit; }
 
-input[type=date], textarea[type=date] { -webkit-appearance: none; background-color: #FFFFFF; color: #111111; }
+input[type=date], textarea[type=date] { -webkit-appearance: none; background-color: #FFFFFF; color: #111111; text-align: left; }
 
 input[type=date]:invalid::-webkit-datetime-edit, textarea[type=date]:invalid::-webkit-datetime-edit { color: #757575; }
 
