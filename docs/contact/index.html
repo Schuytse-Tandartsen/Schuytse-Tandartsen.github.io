@@ -272,52 +272,41 @@
       
 
 
-  
 
-  
-    <section class="grid col-3"/>
-      <div class="col p-3">
-        <h3 id="contact">Contact</h3><p>Heeft u nog vragen dan kunt u contact met ons opnemen via het contactformulier. Indien u een afspraak wilt maken, neem dan telefonisch contact met ons op.</p>
-      </div>
-      <div class="col p-1 p-top-3 p-3-xs">
-        <h3 id="tijdig-afzeggen-afspraak">Tijdig afzeggen afspraak</h3><p>Als u een afspraak heeft gemaakt, rekenen wij op uw komst. Lukt het niet om uw afspraak na te komen, geef dit dan zo snel mogelijk aan ons door. Bel in ieder geval 24 uur voor uw geplande afspraak.</p>
-      </div>
-      <div class="col p-3 align-items-center">
-        <div class="contact_methods">  <div class="contact_method">    <i class="uil uil-phone"></i>    <a href="tel:0262001161">026 - 2001161</a>  </div>  <div class="contact_method">    <i class="uil uil-envelope"></i>    <a href="mailto:info@schuytsetandartsen.nl">info@schuytsetandartsen.nl</a>  </div>  <div class="contact_method">    <i class="uil uil-map-pin"></i>    <a href="https://goo.gl/maps/v7RFgYdeaeoGMbfb8" target="_blank">      <address>          <div>Bakerwaard 29</div>          <div>6846 EM</div>          <div>Arnhem</div>      </address>    </a>  </div></div>
-      </div>
-    </section>
-  
 
-  
 
-  
-    <section class="grid col-3"/>
-      <div class="col p-3">
-        <h3 id="openingstijden">Openingstijden</h3><ul class="w-75 p-0">  <li class="flex flex-row space-between no-bullets">    <span>      Maandag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Dinsdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Woensdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Donderdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Vrijdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Zaterdag    </span>    <span class="p-left-2 flex-end">      Gesloten    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Zondag    </span>    <span>      Gesloten    </span>  </li></ul>
-      </div>
-      <div class="col p-1 p-top-3 p-3-xs">
-        <form id="contact-form">  <input type="hidden" name="_honeypot" value="" />  <fieldset>    <section class="flex-column align-items-start p-bottom-1">      <label for="aanhef">Aanhef</label>      <p class="flex-row p-left-0 m-0">        <input type="radio" id="dhr" name="Aanhef" value="Dhr." />        <label for="dhr">Dhr.</label>        <input class="m-left-1" type="radio" id="mevr" name="Aanhef" value="Mevr." />        <label for="mevr">Mevr.</label>      </p>    </section>    <label for="voornaam">Voornaam</label>    <input type="text" id="voornaam" name="Voornaam" placeholder="Vul uw voornaam in." />    <label for="achternaam">Achternaam</label>    <input type="text" id="achternaam" name="Achternaam" placeholder="Vul uw achternaam in." />    <label for="geboortedatum">Geboortedatum</label>    <input type="date" id="geboortedatum" name="Geboortedatum" placeholder="Vul uw geboortedatum in." />    <label for="email">Email</label>    <input type="email" id="email" name="Email" placeholder="Vul uw email in." />    <label for="telefoon">Telefoonnummer</label>    <input type="tel" id="telefoon" name="Telefoon" placeholder="Vul uw telefoonnummer in." />    <label for="opmerking">Opmerking</label>    <textarea id="opmerking" name="Opmerking" placeholder="Schrijf uw opmerking."></textarea>    <button id="submit-button" type="button" class="background-primary">Verstuur</button>  </fieldset></form><script defer="" src="https://www.google.com/recaptcha/api.js?render=6LcOAcMcAAAAACwd8vHc-qcL7pckmepR_RshdBS0"></script><script>  function onSubmit() {    var url = "https://script.google.com/macros/s/AKfycbya20CryQjoQ-3RfsSQhCSHbylvq47sElHV986-9lyR5IHDX6ZR7r_LKXGkJwF7H216rA/exec";    var method = 'POST';    var form = document.getElementById("contact-form");    var body = new FormData(form);    grecaptcha.ready(function() {      grecaptcha.execute('6LcOAcMcAAAAACwd8vHc-qcL7pckmepR_RshdBS0', { action: 'submit' }).then(function(token) {        body.append('X-ReCaptcha', token);        fetch(url, { method, body, mode: 'no-cors' })          .then(function() {            window.location.href = '/success/';          })      });    });  }  document.getElementById('submit-button').addEventListener('click', function(e) {    e.preventDefault();    onSubmit();  });</script>
-      </div>
-      <div class="col p-3 align-items-center">
-        <div class="w-100 flex align-self-start">  <picture class="image__container--home w-100">    <source media="(max-width: 767px)" srcset="/assets/images/contact/contact-Schuytse-Tandartsen-Arnhem.png" />    <source media="(min-width: 768px)" srcset="/assets/images/contact/contact-Schuytse-Tandartsen-Arnhem.png" />    <img class="w-75" src="/assets/images/contact/Tandarts in Arnhem - Schuytse Tandartsen - Contact.png" alt="Boom met bellende kies" />  </picture></div>
-      </div>
-    </section>
-  
+<section class="grid col-3" />
+<div class="col p-3">
+  <h3 id="contact">Contact</h3><p>Heeft u nog vragen dan kunt u contact met ons opnemen via het contactformulier. Indien u een afspraak wilt maken, neem dan telefonisch contact met ons op.</p>
+</div>
+<div class="col p-1 p-top-3 p-3-xs">
+  <h3 id="tijdig-afzeggen-afspraak">Tijdig afzeggen afspraak</h3><p>Als u een afspraak heeft gemaakt, rekenen wij op uw komst. Lukt het niet om uw afspraak na te komen, geef dit dan zo snel mogelijk aan ons door. Bel in ieder geval 24 uur voor uw geplande afspraak.</p>
+</div>
+<div class="col p-3 align-items-center">
+  <div class="contact_methods">  <div class="contact_method">    <i class="uil uil-phone"></i>    <a href="tel:0262001161">026 - 2001161</a>  </div>  <div class="contact_method">    <i class="uil uil-envelope"></i>    <a href="mailto:info@schuytsetandartsen.nl">info@schuytsetandartsen.nl</a>  </div>  <div class="contact_method">    <i class="uil uil-map-pin"></i>    <a href="https://goo.gl/maps/v7RFgYdeaeoGMbfb8" target="_blank">      <address>          <div>Bakerwaard 29</div>          <div>6846 EM</div>          <div>Arnhem</div>      </address>    </a>  </div></div>
+</div>
+</section>
 
-  
 
-  
-    <section class="grid col-2"/>
-      <div class="col p-3">
-        
-      </div>
-      <div class="col p-3">
-        
-      </div>
-    </section>
-  
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2458.972990950706!2d5.8343421157864075!3d51.95268397971076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a99fc222cfff%3A0xe5270a654378b3b4!2sSchuytse%20Tandartsen!5e0!3m2!1snl!2snl!4v1623348897231!5m2!1snl!2snl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+<section class="grid col-3" />
+<div class="col p-3">
+  <h3 id="openingstijden">Openingstijden</h3><ul class="w-75 p-0">  <li class="flex flex-row space-between no-bullets">    <span>      Maandag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Dinsdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Woensdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Donderdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Vrijdag    </span>    <span class="p-left-2 flex-end">      08:00 - 16:30    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Zaterdag    </span>    <span class="p-left-2 flex-end">      Gesloten    </span>  </li>  <li class="flex flex-row space-between no-bullets">    <span>      Zondag    </span>    <span>      Gesloten    </span>  </li></ul>
+</div>
+<div class="col p-1 p-top-3 p-3-xs">
+  <form id="contact-form">  <input type="hidden" name="_honeypot" value="" />  <fieldset>    <section class="flex-column align-items-start p-bottom-1">      <label for="aanhef" class="required">Aanhef</label>      <p class="flex-row p-left-0 m-0">        <input type="radio" id="dhr" name="Aanhef" value="Dhr." required="" />        <label for="dhr">Dhr.</label>        <input class="m-left-1 m-left-1-xs" type="radio" id="mevr" name="Aanhef" value="Mevr." required="" />        <label for="mevr">Mevr.</label>      </p>    </section>    <label for="voornaam" class="required">Voornaam</label>    <input type="text" id="voornaam" name="Voornaam" placeholder="Vul uw voornaam in." required="" />    <label for="achternaam" class="required">Achternaam</label>    <input type="text" id="achternaam" name="Achternaam" placeholder="Vul uw achternaam in." required="" />    <label for="geboortedatum" class="required">Geboortedatum</label>    <input type="date" id="geboortedatum" name="Geboortedatum" placeholder="Vul uw geboortedatum in." required="" />    <label for="email" class="required">Email</label>    <input type="email" id="email" name="Email" placeholder="Vul uw email in." required="" />    <label for="telefoon" class="required">Telefoonnummer</label>    <input type="tel" id="telefoon" name="Telefoon" placeholder="Vul uw telefoonnummer in." required="" />    <label for="opmerking">Opmerking</label>    <textarea id="opmerking" name="Opmerking" placeholder="Schrijf uw opmerking."></textarea>    <button id="submit-button" type="submit" class="background-primary">Verstuur</button>  </fieldset></form><script defer="" src="https://www.google.com/recaptcha/api.js?render=6LcOAcMcAAAAACwd8vHc-qcL7pckmepR_RshdBS0"></script><script>  function onSubmit() {    var url = "https://script.google.com/macros/s/AKfycbyyD_VQwvBw_1afr9oQNjbnAKgFZkN_JrAufOm1uN1IqrM7nQ9jCEla5AkPaVrMIqDNUg/exec";    var method = 'POST';    var form = document.getElementById("contact-form");    var body = new FormData(form);    grecaptcha.ready(function() {      grecaptcha.execute('6LcOAcMcAAAAACwd8vHc-qcL7pckmepR_RshdBS0', { action: 'submit' }).then(function(token) {        body.append('X-ReCaptcha', token);        fetch(url, { method, body, mode: 'no-cors' })          .then(function() {            window.location.href = '/success/';          })      });    });  }  document.getElementById('contact-form').addEventListener('submit', function(e) {    e.preventDefault();    onSubmit();  });</script>
+</div>
+<div class="col p-3 align-items-center">
+  <div class="w-100 flex align-self-start">  <picture class="image__container--home w-100">    <source media="(max-width: 767px)" srcset="/assets/images/contact/contact-Schuytse-Tandartsen-Arnhem.png" />    <source media="(min-width: 768px)" srcset="/assets/images/contact/contact-Schuytse-Tandartsen-Arnhem.png" />    <img class="w-75" src="/assets/images/contact/Tandarts in Arnhem - Schuytse Tandartsen - Contact.png" alt="Boom met bellende kies" />  </picture></div>
+</div>
+</section>
+
+
+<iframe class="p-top-3"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2458.972990950706!2d5.8343421157864075!3d51.95268397971076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a99fc222cfff%3A0xe5270a654378b3b4!2sSchuytse%20Tandartsen!5e0!3m2!1snl!2snl!4v1623348897231!5m2!1snl!2snl"
+  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </main>
     <footer class="grid flex flex-center space-between p-2 p-bottom-0 border__nav--bottom background-white-beige">
