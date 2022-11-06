@@ -62,7 +62,7 @@
           </li>
         
           
-          <li class="top active">
+          <li class="top ">
             <a href="/over-ons/">Over ons</a>
             <ul class="children">
               
@@ -78,8 +78,8 @@
                 </li>
               </a>
               
-              <a href="/vacature-tandartsassistente/">
-                <li class="child active">
+              <a href="/vacatures/">
+                <li class="child ">
                   Vacatures
                 </li>
               </a>
@@ -284,19 +284,7 @@
   
 
   <ul class="m-0">
-    <h2 class="truncate p-bottom-1 black">Over ons</h2>
-    
-      <li class="">
-        <a href="/het-team/" class="truncate">Het team</a>
-      </li>
-    
-      <li class="">
-        <a href="/missie-en-visie/" class="truncate">Missie en visie</a>
-      </li>
-    
-      <li class="active">
-        <a href="/vacature-tandartsassistente/" class="truncate">Vacatures</a>
-      </li>
+    <h2 class="truncate p-bottom-1 black"></h2>
     
   </ul>
 </div>
