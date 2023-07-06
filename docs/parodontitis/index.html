@@ -510,6 +510,14 @@
   </div>
 </div>
 
+<script id='copyright'>
+  const copyright = document.createElement('div');
+  copyright.innerText = `Alle rechten voorbehouden. © 2021-${new Date().getFullYear()} Schuytse Tandartsen`;
+  copyright.className = 'flex flex-center p-bottom-2'
+
+  document.querySelector("#copyright").replaceWith(copyright);
+</script>
+
     <a class="button__covid" href="/covid-19/">COVID-19</a>
 
     <div class="contact_overlay">
