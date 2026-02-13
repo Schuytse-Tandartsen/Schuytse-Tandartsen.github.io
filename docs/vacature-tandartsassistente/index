@@ -92,15 +92,15 @@
             <a href="/behandelingen/">Behandelingen</a>
             <ul class="children">
               
-              <a href="/angsttandarts-voor-volwassen/">
-                <li class="child ">
-                  Angsttandarts voor volwassenen
-                </li>
-              </a>
-              
               <a href="/eerste-tandartsbezoek/">
                 <li class="child ">
                   Eerste tandartsbezoek
+                </li>
+              </a>
+              
+              <a href="/Implantologie/">
+                <li class="child ">
+                  Implantologie
                 </li>
               </a>
               
@@ -125,6 +125,12 @@
               <a href="/sport-gebitsbescherming/">
                 <li class="child ">
                   Sport gebitsbescherming
+                </li>
+              </a>
+              
+              <a href="/tanden-bleken/">
+                <li class="child ">
+                  Tanden Bleken
                 </li>
               </a>
               
@@ -306,7 +312,7 @@
       
         <section class="grid col-2"/>
           <div class="col p-top-0 p-right-3 p-bottom-3 p-left-3">
-            test
+            ## Vacature tandartsassistente### IntroductieOns team gaat uitbreiden en is op zoek naar een mondzorgprofessional die ons team komt versterken. Ben jij een tandartsassistente in hart en nieren met aantoonbare ervaring in het behandelen en begeleiden van kinderen, en ben je op zoek naar een baan voor 2 à 3 (of meer) dagen per week in Arnhem? Dan is deze functie iets voor jou!///### OrganisatieSchuytse Tandartsen is een groeiende tandartspraktijk met drie behandelkamers. De focus van de praktijk ligt voornamelijk op het behandelen van jongvolwassenen, kinderen en hun ouders/verzorgers. Wij streven naar het leveren van op maat gemaakte en betrouwbare mondzorg door het geven van goede voorlichting, het toepassen van vakkundigheid en het gebruik van vernieuwde technieken, ondersteund door moderne apparatuur.+++### FunctieAls tandartsassistente bied je ondersteuning aan tandheelkundige zorgverleners bij de voorbereiding, uitvoering en afronding van patiëntenbehandelingen in de breedste zin van het woord. Je wordt gezien als de rechterhand van de zorgverlener en bent daarmee een onmisbare kracht. Een belangrijk onderdeel van de functie is het assisteren bij de behandeling van kinderen. Je weet kinderen op hun gemak te stellen, toont geduld en past je communicatie aan op leeftijd en situatie. Daarnaast ben je niet alleen in de behandelkamer te vinden, maar ook zichtbaar aan de balie waar je patiënten te woord staat. Het is daarom belangrijk dat je professioneel en representatief bent. Met jouw expertise en vriendelijke aanpak zorg je ervoor dat iedere patiënt – jong en oud – de praktijk met een glimlach verlaat.///### Dit neem jij mee- Aantoonbare werkervaring met het behandelen en begeleiden van kinderen- Affiniteit met jongvolwassenen en gezinnen- Je werkt volgens de WIP-richtlijnen- Je weet patiënten (en ouders/verzorgers) te motiveren en gerust te stellen- Je bent professioneel en representatief- Je bent communicatief sterk en sociaal- Uitstekende beheersing van de Nederlandse en Engelse taal- Beheersing van een derde taal is een pré+++### Dit krijg jij van ons- Salaris boven marktconform- Arbeidsvoorwaarden conform KNMT-richtlijnen- Pensioenregeling- Vakantiegeld- Reiskostenvergoeding (vanaf 11 km)- Overgewerkte uren worden uitbetaald- Een functie met veel autonomie- Afwisselende en diverse behandelingen- Een hecht en collegiaal team- Een op maat gemaakt persoonlijk ontwikkelingsplan (POP)- Een persoonlijke buddy tijdens het inwerken- Vitaliteitsprogramma- Jaarlijks praktijkuitje- Gratis parkeergelegenheid///### Hoe kom je in aanmerking?Ben je enthousiast over deze vacature voor tandartsassistente en beschik je over ervaring met kinderbehandelingen? Stuur dan jouw motivatiebrief en cv t.a.v. dhr. Moedie Balata naar praktijk@schuytsetandartsen.nl
           </div>
           <div class="col p-top-0 p-right-3 p-bottom-3 p-left-3">
             
@@ -405,6 +411,14 @@
     </a>
   </div>
 </div>
+
+<script id='copyright'>
+  const copyright = document.createElement('div');
+  copyright.innerText = `Alle rechten voorbehouden. © 2021-${new Date().getFullYear()} Schuytse Tandartsen`;
+  copyright.className = 'flex flex-center p-bottom-2'
+
+  document.querySelector("#copyright").replaceWith(copyright);
+</script>
 
     <a class="button__covid" href="/covid-19/">COVID-19</a>
 
