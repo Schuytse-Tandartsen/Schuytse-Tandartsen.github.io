@@ -40,6 +40,8 @@ h1 { font-size: 3rem; font-weight: 400; letter-spacing: -1px; line-height: 1.1; 
 
 @media screen and (min-width: 48em) { h1 { font-size: 5rem; } }
 
+h1#vacature-tandartsassistente { font-size: 1.75rem; font-weight: 400; color: #8FBE00; margin: 0; }
+
 h2 { font-size: 1.75rem; font-weight: 400; color: #8FBE00; margin: 0; }
 
 h3 { font-size: 1.5rem; font-weight: 400; color: #8FBE00; }
